@@ -105,14 +105,14 @@ const Game = () => {
   const handleSymbolClick = async (symbol) => {
     if (gameStatus !== 'playing') return;
 
-    if (symbol.isTarget) {
+    if (symbol.category === currentLevelData.color) {
       const newScore = score + 10;
       setScore(newScore);
       setFoundSymbols(prev => [...prev, symbol.id]);
       
       // 检查是否找到所有目标
       const remainingTargets = currentLevelData.symbols.filter(s => 
-        s.isTarget && !foundSymbols.includes(s.id)
+        s.category === currentLevelData.color && !foundSymbols.includes(s.id)
       );
       
       if (remainingTargets.length === 1) {
