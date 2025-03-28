@@ -4,7 +4,7 @@
   "description": "工艺室安全标识学习游戏",
   "main": "src/index.js",
   "scripts": {
-  "build": "node ./node_modules/.bin/vite build"
+  "build": "vite build"
   },
   "dependencies": {
     "react": "^18.2.0",
