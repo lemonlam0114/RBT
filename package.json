@@ -4,9 +4,7 @@
   "description": "工艺室安全标识学习游戏",
   "main": "src/index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+  "build": "node ./node_modules/.bin/vite build"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -19,6 +17,6 @@
     "vite": "^5.0.12"
   },
   "engines": {
-    "node": ">=16.0.0"
+  "node": ">=16.0.0"
   }
 }
