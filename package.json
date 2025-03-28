@@ -4,7 +4,7 @@
   "description": "工艺室安全标识学习游戏",
   "main": "src/index.jsx",
   "scripts": {
-  "prebuild": "shx chmod +x ./node_modules/.bin/vite",
+  "postinstall": "if [ \"$VERCEL\" = \"1\" ]; then chmod +x ./node_modules/.bin/vite; fi",
   "build": "npx vite build"
   },
   "dependencies": {
