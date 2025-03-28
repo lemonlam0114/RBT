@@ -76,6 +76,78 @@ export const levelConfig = {
         image: symbolImages.red.emergencyExit,
         category: 'red',
         isTarget: true
+      },
+      {
+        id: 'electricWarning',
+        name: 'Amaran Elektrik',
+        meaning: 'Bahaya kejutan elektrik',
+        image: symbolImages.yellow.electricWarning,
+        category: 'yellow',
+        isTarget: true
+      },
+      {
+        id: 'hotSurface',
+        name: 'Permukaan Panas',
+        meaning: 'Amaran permukaan panas',
+        image: symbolImages.yellow.hotSurface,
+        category: 'yellow',
+        isTarget: true
+      },
+      {
+        id: 'toxicWarning',
+        name: 'Bahan Toksik',
+        meaning: 'Amaran bahan toksik',
+        image: symbolImages.yellow.toxicWarning,
+        category: 'yellow',
+        isTarget: true
+      },
+      {
+        id: 'firstAid',
+        name: 'Peti Pertolongan Cemas',
+        meaning: 'Lokasi peti pertolongan cemas',
+        image: symbolImages.green.firstAid,
+        category: 'green',
+        isTarget: true
+      },
+      {
+        id: 'assemblyPoint',
+        name: 'Tempat Berkumpul',
+        meaning: 'Tempat berkumpul kecemasan',
+        image: symbolImages.green.assemblyPoint,
+        category: 'green',
+        isTarget: true
+      },
+      {
+        id: 'emergencyExitGreen',
+        name: 'Pintu Kecemasan',
+        meaning: 'Laluan keluar kecemasan',
+        image: symbolImages.green.emergencyExit,
+        category: 'green',
+        isTarget: true
+      },
+      {
+        id: 'eyeProtection',
+        name: 'Pelindung Mata',
+        meaning: 'Wajib memakai pelindung mata',
+        image: symbolImages.blue.eyeProtection,
+        category: 'blue',
+        isTarget: true
+      },
+      {
+        id: 'earProtection',
+        name: 'Pelindung Telinga',
+        meaning: 'Wajib memakai pelindung telinga',
+        image: symbolImages.blue.earProtection,
+        category: 'blue',
+        isTarget: true
+      },
+      {
+        id: 'info',
+        name: 'Maklumat',
+        meaning: 'Maklumat penting',
+        image: symbolImages.white.info,
+        category: 'white',
+        isTarget: true
       }
     ]
   },
