@@ -77,32 +77,40 @@ export const levelConfig = {
         category: 'red',
         isTarget: true
       },
+    ]
+  },
+  2: {
+    symbols: [
       {
-        id: 'electricWarning',
-        name: 'Amaran Elektrik',
-        meaning: 'Bahaya kejutan elektrik',
+        id: 'yellow-electric',
+        name: 'Awas Kejutan Elektrik',
+        meaning: 'Bahaya kejutan elektrik di kawasan ini',
         image: symbolImages.yellow.electricWarning,
         category: 'yellow',
         isTarget: true
       },
       {
-        id: 'hotSurface',
-        name: 'Permukaan Panas',
-        meaning: 'Amaran permukaan panas',
+        id: 'yellow-hot',
+        name: 'Awas Permukaan Panas',
+        meaning: 'Permukaan panas, berhati-hati',
         image: symbolImages.yellow.hotSurface,
         category: 'yellow',
         isTarget: true
       },
       {
-        id: 'toxicWarning',
-        name: 'Bahan Toksik',
-        meaning: 'Amaran bahan toksik',
+        id: 'yellow-toxic',
+        name: 'Amaran Bahan Toksik',
+        meaning: 'Bahan toksik, gunakan perlindungan',
         image: symbolImages.yellow.toxicWarning,
         category: 'yellow',
         isTarget: true
-      },
+      }
+    ]
+  },
+  3: {
+    symbols: [
       {
-        id: 'firstAid',
+        id: 'green-firstaid',
         name: 'Peti Pertolongan Cemas',
         meaning: 'Lokasi peti pertolongan cemas',
         image: symbolImages.green.firstAid,
@@ -110,140 +118,52 @@ export const levelConfig = {
         isTarget: true
       },
       {
-        id: 'assemblyPoint',
+        id: 'green-assembly',
         name: 'Tempat Berkumpul',
-        meaning: 'Tempat berkumpul kecemasan',
+        meaning: 'Tempat berkumpul semasa kecemasan',
         image: symbolImages.green.assemblyPoint,
         category: 'green',
         isTarget: true
       },
       {
-        id: 'emergencyExitGreen',
+        id: 'green-emergency-exit',
         name: 'Pintu Kecemasan',
         meaning: 'Laluan keluar kecemasan',
         image: symbolImages.green.emergencyExit,
         category: 'green',
         isTarget: true
-      },
-      {
-        id: 'eyeProtection',
-        name: 'Pelindung Mata',
-        meaning: 'Wajib memakai pelindung mata',
-        image: symbolImages.blue.eyeProtection,
-        category: 'blue',
-        isTarget: true
-      },
-      {
-        id: 'earProtection',
-        name: 'Pelindung Telinga',
-        meaning: 'Wajib memakai pelindung telinga',
-        image: symbolImages.blue.earProtection,
-        category: 'blue',
-        isTarget: true
-      },
-      {
-        id: 'info',
-        name: 'Maklumat',
-        meaning: 'Maklumat penting',
-        image: symbolImages.white.info,
-        category: 'white',
-        isTarget: true
-      }
-    ]
-  },
-  2: {
-    difficulty: 'sederhana',
-    color: 'yellow',
-    symbols: [
-      {
-        id: 'yellow-electric-2',
-        name: 'Awas Kejutan Elektrik',
-        image: symbolImages.yellow.electricWarning,
-        category: 'yellow',
-        position: { x: 60, y: 45 },
-        meaning: 'Bahaya kejutan elektrik di kawasan ini'
-      },
-      {
-        id: 'yellow-hot-2',
-        name: 'Awas Permukaan Panas',
-        image: symbolImages.yellow.hotSurface,
-        category: 'yellow',
-        position: { x: 40, y: 30 },
-        meaning: 'Permukaan panas, berhati-hati'
-      },
-      {
-        id: 'yellow-toxic-2',
-        name: 'Amaran Bahan Toksik',
-        image: symbolImages.yellow.toxicWarning,
-        category: 'yellow',
-        position: { x: 75, y: 55 },
-        meaning: 'Bahan toksik, gunakan perlindungan'
-      }
-    ]
-  },
-  3: {
-    difficulty: 'sederhana',
-    color: 'green',
-    symbols: [
-      {
-        id: 'green-firstaid-3',
-        name: 'Peti Pertolongan Cemas',
-        image: symbolImages.green.firstAid,
-        category: 'green',
-        position: { x: 10, y: 75 },
-        meaning: 'Lokasi peti pertolongan cemas'
-      },
-      {
-        id: 'green-assembly-3',
-        name: 'Tempat Berkumpul',
-        image: symbolImages.green.assemblyPoint,
-        category: 'green',
-        position: { x: 5, y: 90 },
-        meaning: 'Tempat berkumpul semasa kecemasan'
-      },
-      {
-        id: 'green-emergency-exit-3',
-        name: 'Pintu Kecemasan',
-        image: symbolImages.green.emergencyExit,
-        category: 'green',
-        position: { x: 95, y: 85 },
-        meaning: 'Pintu keluar kecemasan'
       }
     ]
   },
   4: {
-    difficulty: 'sukar',
-    color: 'blue',
     symbols: [
       {
-        id: 'blue-eye-4',
+        id: 'blue-eye',
         name: 'Wajib Pakai Cermin Mata Keselamatan',
+        meaning: 'Mesti memakai cermin mata keselamatan',
         image: symbolImages.blue.eyeProtection,
         category: 'blue',
-        position: { x: 25, y: 40 },
-        meaning: 'Mesti memakai cermin mata keselamatan'
+        isTarget: true
       },
       {
-        id: 'blue-ear-4',
+        id: 'blue-ear',
         name: 'Wajib Pakai Pelindung Telinga',
+        meaning: 'Mesti memakai pelindung telinga',
         image: symbolImages.blue.earProtection,
         category: 'blue',
-        position: { x: 55, y: 35 },
-        meaning: 'Mesti memakai pelindung telinga'
+        isTarget: true
       }
     ]
   },
   5: {
-    difficulty: 'sukar',
-    color: 'white',
     symbols: [
       {
-        id: 'white-info-5',
+        id: 'white-info',
         name: 'Tanda Maklumat',
+        meaning: 'Maklumat penting',
         image: symbolImages.white.info,
         category: 'white',
-        position: { x: 20, y: 15 },
-        meaning: 'Maklumat penting'
+        isTarget: true
       }
     ]
   }
