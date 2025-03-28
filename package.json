@@ -4,6 +4,7 @@
   "description": "工艺室安全标识学习游戏",
   "main": "src/index.jsx",
   "scripts": {
+  "prebuild": "chmod +x ./node_modules/.bin/vite",
   "build": "npx vite build"
   },
   "dependencies": {
